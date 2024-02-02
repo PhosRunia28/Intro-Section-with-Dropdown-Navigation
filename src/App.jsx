@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import { useState } from "react";
 import Header from "./components/Header";
+import Main from "./components/Main";
 export default function App() {
   const [selectedDropdown, setSelectedDropdown] = useState("");
   const [openNavMenu, setOpenNavMenu] = useState(false);
@@ -12,6 +13,7 @@ export default function App() {
         openNavMenu={openNavMenu}
         setOpenNavMenu={setOpenNavMenu}
       />
+      <Main />
     </div>
   );
 }
